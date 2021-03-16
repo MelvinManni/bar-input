@@ -1,0 +1,61 @@
+body {
+  font-family: sans-serif;
+}
+._bar-input {
+  margin: 0 5px;
+}
+
+._bar-input-wrapper {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+._bar-input-label {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+._bar-input-field {
+  border: 1.5px solid rgb(40, 41, 41);
+  background: rgba(255, 255, 255, 0.801);
+  margin: 0;
+  padding: 6px;
+  height: 45px;
+  width: 45px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+._bar-input-field:focus {
+  border-color: #000;
+}
+
+._bar-input-wrapper ._bar-input-field.inner,
+._bar-input-wrapper ._bar-input-field.last {
+  border-left: 0;
+}
+
+._bar-input-wrapper ._bar-input-field.field-0 {
+  border-left: 1.5px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+._bar-input-field::-webkit-outer-spin-button,
+._bar-input-field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+._bar-input-field[type=number] {
+  -moz-appearance: textfield;
+}
