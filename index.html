@@ -1,39 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Parcel Sandbox</title>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="src/styles.css" />
-  </head>
 
-  <body>
-    <form id="form">
-      <div
-        class="_bar-input"
-        type="text"
-        count="15"
-        label="First Name"
-        accessor="firstName"
-      ></div>
+<head>
+  <title>Parcel Sandbox</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="src/styles.css" />
+</head>
 
-      <div
-        class="_bar-input"
-        type="text"
-        count="15"
-        label="Last Name"
-        accessor="lastName"
-        required="true"
-      ></div>
+<body>
+  <form id="form">
 
-      <button type="submit">
-        submit
-      </button>
-    </form>
-
-    <div class="showcase">
-      <p>Last Name : <span id="showLastName"></span></p>
-      <p>First Name : <span id="showFirstName"></span></p>
+    <div class="form-group">
+      <div class="_bar-input" type="text" count="15" label="First Name" accessor="firstName"></div>
     </div>
-    <script src="src/index.js"></script>
-  </body>
+    <div class="form-group">
+      <div class="_bar-input" type="text" count="15" label="Last Name*" accessor="lastName" required="true"></div>
+      <small id="lastnameHelper" >this field is required</small>
+    </div>
+
+    <button type="submit">
+      submit
+    </button>
+  </form>
+
+  <div class="showcase">
+    <p>Last Name : <span id="showLastName"></span></p>
+    <p>First Name : <span id="showFirstName"></span></p>
+  </div>
+  <script src="src/index.js"></script>
+</body>
+
 </html>

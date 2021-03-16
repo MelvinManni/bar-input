@@ -1,8 +1,9 @@
 body {
   font-family: sans-serif;
 }
-._bar-input {
+.form-group {
   margin: 0 5px;
+  margin-bottom: 20px;
 }
 
 ._bar-input-wrapper {
